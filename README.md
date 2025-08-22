@@ -1,4 +1,4 @@
-# 🌐 [![Abid's Playground](.ascii-art-text.png)](https://abidsplayground.com)
+# 🌐 [![Abid's Playground](./ascii-art-text.png)](https://abidsplayground.com)
 
 Welcome to **Abid's Playground** — my personal website built with **HTML, CSS, and GitHub Pages**.  
 This is where I experiment with web design, test ideas, and showcase projects.
