@@ -1,0 +1,83 @@
+/* === General Body Styles === */
+body {
+  background-color: #555555;
+  font-family: Arial, sans-serif, "Times New Roman", Times, serif;;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 0px;
+}
+
+/* === Logo === */
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  height: auto; /*Aspect ratio is locked */
+}
+
+/* === Navigation Bar === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 5px 45px;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(to bottom, #ff9e03, #c74d01);
+  border-right: 1px solid #444;
+}
+
+nav ul li:last-child a {
+  border-right: none;
+}
+
+nav ul li:first-child a {
+  border-radius: 10px 0 0 10px;
+}
+nav ul li:last-child a {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Hover & Active (highlighted page) */
+nav a:hover,
+nav a.active {
+  background: linear-gradient(to bottom, #ddd, #555);
+  color: white;
+}
+
+/* === Main Blog Area === */
+main {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  opacity: 0.2;
+}
