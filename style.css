@@ -43,7 +43,7 @@ nav a {
   font-size: 28px;
   font-weight: bold;
   color: black;
-  background: linear-gradient(to bottom, #ff9e03, #c74d01);
+  background: linear-gradient(to bottom, #ea9000, #d75301);
   border-right: 1px solid #444;
 }
 
@@ -61,7 +61,7 @@ nav ul li:last-child a {
 /* Hover & Active (highlighted page) */
 nav a:hover,
 nav a.active {
-  background: linear-gradient(to bottom, #ddd, #555);
+  background: linear-gradient(to top, #a3a3a3, #555);
   color: white;
 }
 
