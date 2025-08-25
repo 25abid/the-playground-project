@@ -3,6 +3,13 @@ function loadIncludes() {
     .then(res => res.text())
     .then(data => document.getElementById('header').innerHTML = data);
 
+  fetch('/partials/clock.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('clock-container').innerHTML = data;
+      startClock();
+    });
+
   fetch('/partials/footer.html')
     .then(res => res.text())
     .then(data => document.getElementById('footer').innerHTML = data);
@@ -31,4 +38,16 @@ async function loadPosts(container) {
     console.error("loadPosts failed:", err);
     container.innerHTML = "<p>Couldn't load posts.</p>";
   }
+}
+
+function startClock() {
+  function updateClock() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateStr = now.toLocaleDateString(undefined, options);
+    const timeStr = now.toLocaleTimeString();
+    document.getElementById('clock').textContent = `${dateStr} — ${timeStr}`;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
 }
