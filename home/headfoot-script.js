@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadPosts(container) {
   try {
-    // load from /blog/posts.json
     const res = await fetch("posts.json", { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const posts = await res.json();

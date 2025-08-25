@@ -37,12 +37,12 @@ nav a {
   padding: 5px 45px;
   text-decoration: none;
   font-family: "Times New Roman", serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   background: linear-gradient(to bottom, #ff8837, #dd5c00);
   border-right: 1px solid #444;
-  transition: background 0.4s ease, color 0.4s ease;
+  transition: background 0.4s ease, color 0.5s ease;
 }
 
 nav ul li:last-child a {
@@ -59,7 +59,7 @@ nav ul li:last-child a {
 nav a:hover,
 nav a.active {
   background: linear-gradient(to top, #a3a3a3, #555);
-  color: white;
+  color: rgb(220, 220, 220);
 }
 
 main {
