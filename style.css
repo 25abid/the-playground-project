@@ -43,8 +43,9 @@ nav a {
   font-size: 28px;
   font-weight: bold;
   color: black;
-  background: linear-gradient(to bottom, #ea9000, #d75301);
+  background: linear-gradient(to bottom, #ff8837, #dd5c00);
   border-right: 1px solid #444;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 nav ul li:last-child a {
