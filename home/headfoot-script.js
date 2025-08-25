@@ -7,3 +7,15 @@ function loadIncludes() {
     .then(res => res.text())
     .then(data => document.getElementById('footer').innerHTML = data);
 }
+
+function fadeToPage(event, url) {
+  event.preventDefault();
+  document.body.classList.add('fade-out');
+  setTimeout(function() {
+    window.location.href = url;
+  }, 400);
+}
+
+window.onload = function() {
+  document.body.classList.add('fade-in');
+};
