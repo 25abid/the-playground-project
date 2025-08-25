@@ -1,5 +1,5 @@
-/* === General Body Styles === */
 body {
+  opacity: 1;
   background-color: #555555;
   font-family: Arial, sans-serif, "Times New Roman", Times, serif;;
   color: white;
@@ -7,21 +7,18 @@ body {
   padding: 0;
 }
 
-/* === Header === */
 header {
   text-align: center;
   padding: 0px;
 }
 
-/* === Logo === */
 .logo {
   display: block;
   margin: 0 auto;
   max-width: 700px;
-  height: auto; /*Aspect ratio is locked */
+  height: auto;
 }
 
-/* === Navigation Bar === */
 nav ul {
   list-style: none;
   padding: 0;
@@ -59,14 +56,12 @@ nav ul li:last-child a {
   border-radius: 0 10px 10px 0;
 }
 
-/* Hover & Active (highlighted page) */
 nav a:hover,
 nav a.active {
   background: linear-gradient(to top, #a3a3a3, #555);
   color: white;
 }
 
-/* === Main Blog Area === */
 main {
   max-width: 800px;
   margin: 10px auto;
@@ -75,7 +70,6 @@ main {
   border-radius: 10px;
 }
 
-/* === Footer === */
 footer {
   text-align: center;
   padding: 20px;
@@ -83,15 +77,13 @@ footer {
   opacity: 0.2;
 }
 
-.fade-out {
+#main-content {
   opacity: 0;
-  transition: opacity 0.4s ease;
+  animation: fadeIn 2s ease forwards;
 }
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.4s ease;
-}
-body {
-  opacity: 1;
-  transition: opacity 0.4s ease;
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
